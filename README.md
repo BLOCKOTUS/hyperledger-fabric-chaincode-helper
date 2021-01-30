@@ -52,7 +52,7 @@
 ## Documentation
 
 ```javascript
-import { getUniqueClientId, getTimestamp } from 'hyperledger-fabric-offline-transaction-signing';
+import { getUniqueClientId, getTimestamp } from 'hyperledger-fabric-chaincode-helper';
 
 const uniqueClientId: string = getUniqueClientId(ctx);
 const timestamp: string = getTimestamp(ctx);
