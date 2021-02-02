@@ -52,10 +52,16 @@
 ## Documentation
 
 ```javascript
-import { getUniqueClientId, getTimestamp } from 'hyperledger-fabric-chaincode-helper';
+import { BlockotusContract } from 'hyperledger-fabric-chaincode-helper';
 
-const uniqueClientId: string = getUniqueClientId(ctx);
-const timestamp: string = getTimestamp(ctx);
+class MyContract extends BlockotusContract {
+
+  public async initLedger() {
+    const timestamp = this.getTimestamp();
+    const uniqueClientId = this.getUniqueClientId();
+  }
+
+}
 ```
 
 ## _Tool compatible with || BLOCKOTUS || Organism_
