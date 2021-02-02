@@ -1,4 +1,8 @@
-import type { Context } from 'fabric-contract-api';
+declare module 'hyperledger-fabric-chaincode-helper' {
 
-export let getTimestamp: (ctx: Context) => string;
-export let getUniqueClientId: (ctx: Context) => string;
+    import type { Context } from 'fabric-contract-api';
+
+    export function getTimestamp(ctx: Context): string;
+    export function getUniqueClientId(ctx: Context): string;
+
+}
