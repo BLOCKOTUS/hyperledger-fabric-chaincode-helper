@@ -1,5 +1,3 @@
-lib
-index.ts
 tslint.json
 yarn.lock
 yarn-error.log

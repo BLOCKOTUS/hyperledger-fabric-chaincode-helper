@@ -1,8 +1,12 @@
 declare module 'hyperledger-fabric-chaincode-helper' {
 
-    import type { Context } from 'fabric-contract-api';
+    import type { Context, Contract } from 'fabric-contract-api';
 
-    export function getTimestamp(ctx: Context): string;
-    export function getUniqueClientId(ctx: Context): string;
+    export class BlockotusContract extends Contract {
+
+        getTimestamp(ctx: Context): string;
+        getUniqueClientId(ctx: Context): string;
+        
+    }
 
 }
