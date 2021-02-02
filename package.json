@@ -1,12 +1,11 @@
 {
   "name": "hyperledger-fabric-chaincode-helper",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Set of methods for Hyperledger Fabric chaincodes.",
   "main": "index.js",
   "types": "./types/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "tslint -c tslint.json './lib/*.ts'  -e './node_modules/**'",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -20,13 +19,5 @@
   "homepage": "https://github.com/BLOCKOTUS/hyperledger-fabric-chaincode-helper#readme",
   "dependencies": {
     "fabric-contract-api": "^2.2.1"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.12.10",
-    "@babel/core": "^7.12.10",
-    "@babel/preset-env": "^7.12.11",
-    "@babel/preset-typescript": "^7.12.7",
-    "core-js": "^3.8.3",
-    "typescript": "^4.1.3"
   }
 }
