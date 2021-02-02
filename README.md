@@ -56,9 +56,9 @@ import { BlockotusContract } from 'hyperledger-fabric-chaincode-helper';
 
 class MyContract extends BlockotusContract {
 
-  public async initLedger() {
-    const timestamp = this.getTimestamp();
-    const uniqueClientId = this.getUniqueClientId();
+  public async anyfunction() {
+    const timestamp = this.getTimestamp(ctx);
+    const uniqueClientId = this.getUniqueClientId(ctx);
   }
 
 }
