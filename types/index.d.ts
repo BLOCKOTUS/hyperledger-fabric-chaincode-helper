@@ -4,7 +4,7 @@ declare module 'hyperledger-fabric-chaincode-helper' {
 
     export class BlockotusContract extends Contract {
 
-        getTimestamp(ctx: Context): string;
+        getTimestamp(ctx: Context): Number;
         getUniqueClientId(ctx: Context): string;
         
     }
