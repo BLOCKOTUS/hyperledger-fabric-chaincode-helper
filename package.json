@@ -1,6 +1,6 @@
 {
   "name": "hyperledger-fabric-chaincode-helper",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Class for Hyperledger Fabric chaincode.",
   "main": "index.js",
   "types": "./types/index.d.ts",
