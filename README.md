@@ -51,8 +51,11 @@
 
 ## Documentation
 
+Built-in DID requests.
+
 ```javascript
 import { BlockotusContract } from 'hyperledger-fabric-chaincode-helper';
+
 
 class MyContract extends BlockotusContract {
 
