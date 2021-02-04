@@ -10,6 +10,6 @@ declare module 'hyperledger-fabric-chaincode-helper' {
         didRequest(ctx: Context, subject: string, method: string, data: string): Promise<string>;
         getTimestamp(ctx: Context): Number;
         getUniqueClientId(ctx: Context): string;
-        getParams(ctx: Context, rules: { length?: number }): Array<string>;
+        getParams(ctx: Context, rules?: { length?: number }): Array<string>;
     }
 }
