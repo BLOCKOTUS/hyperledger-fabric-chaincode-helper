@@ -3,7 +3,6 @@ declare module 'hyperledger-fabric-chaincode-helper' {
     import type { Context, Contract } from 'fabric-contract-api';
 
     export class BlockotusContract extends Contract {
-
         getTimestamp(ctx: Context): Number;
         getUniqueClientId(ctx: Context): string;
         didGet(ctx: Context, id: string): string;
@@ -12,5 +11,4 @@ declare module 'hyperledger-fabric-chaincode-helper' {
         didDelete(ctx: Context, id: string): string;
         didRequest(ctx: Context, subject: string, method: string, data: string): Promise<string>;
     }
-
 }
