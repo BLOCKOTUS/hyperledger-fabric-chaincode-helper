@@ -1,7 +1,7 @@
 {
   "name": "hyperledger-fabric-chaincode-helper",
-  "version": "0.0.14",
-  "description": "Class for Hyperledger Fabric chaincode.",
+  "version": "0.0.15",
+  "description": "Standard Class for Hyperledger Fabric Chaincode Contract.",
   "main": "index.js",
   "types": "./types/index.d.ts",
   "scripts": {
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/BLOCKOTUS/hyperledger-fabric-chaincode-helper.git"
   },
-  "author": "Daniel Febrero",
+  "author": "Daniel Febrero Martin",
   "license": "AGPL-3.0",
   "bugs": {
     "url": "https://github.com/BLOCKOTUS/hyperledger-fabric-chaincode-helper/issues"
@@ -19,5 +19,13 @@
   "homepage": "https://github.com/BLOCKOTUS/hyperledger-fabric-chaincode-helper#readme",
   "dependencies": {
     "fabric-contract-api": "^2.2.1"
-  }
+  },
+  "keywords": [
+    "hyperledger",
+    "fabric",
+    "blockotus",
+    "blockchain",
+    "did",
+    "kyc"
+  ]
 }
