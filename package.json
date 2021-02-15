@@ -1,6 +1,6 @@
 {
   "name": "hyperledger-fabric-chaincode-helper",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "Standard Class for Hyperledger Fabric Chaincode Contract.",
   "main": "index.js",
   "types": "./types/index.d.ts",
@@ -21,8 +21,7 @@
     "fabric-contract-api": "^2.2.1"
   },
   "keywords": [
-    "hyperledger",
-    "fabric",
+    "Hyperledger Fabric",
     "blockotus",
     "blockchain",
     "did",
