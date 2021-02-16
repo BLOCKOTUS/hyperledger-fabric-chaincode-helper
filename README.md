@@ -74,6 +74,8 @@ class MyContract extends BlockotusContract {
     const timestamp = this.getTimestamp(ctx);
     const uniqueClientId = this.getUniqueClientId(ctx);
     const params = this.getParams(ctx, { length: 2 });
+
+    const results = this.getAllResultsFromIterator(iterator, false, 5); // in a Write transaction, Fabric does not support Limit Queries. This helper does the job.
   }
 
   /**
