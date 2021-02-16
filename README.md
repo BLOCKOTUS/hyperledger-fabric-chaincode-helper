@@ -53,6 +53,17 @@
 
 Built-in DID requests.
 
+### Methods
+
+#### getTimestamp(ctx): number
+#### getUniqueClientId(ctx): string
+#### getParams(ctx, rules): Array<string>
+#### exists(ctx, id): Promise<boolean>
+#### getAllResultsFromIterator(iterator, isHistory, limit): Promise<Array<QueryResult>>
+
+
+### Example
+
 ```javascript
 import { BlockotusContract } from 'hyperledger-fabric-chaincode-helper';
 
