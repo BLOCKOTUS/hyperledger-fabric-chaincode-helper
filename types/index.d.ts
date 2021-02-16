@@ -7,8 +7,8 @@ declare module 'hyperledger-fabric-chaincode-helper' {
         Key: string | null,
         TxId: string | null,
         Timestamp: number | null,
-        Value: string | object | null,
-        Record: string | object | null,
+        Value: string | any | null,
+        Record: string | any | null,
     };
 
     export class BlockotusContract extends Contract {
