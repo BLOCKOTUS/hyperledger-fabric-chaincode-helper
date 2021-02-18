@@ -70,12 +70,12 @@ import { BlockotusContract } from 'hyperledger-fabric-chaincode-helper';
 
 class MyContract extends BlockotusContract {
 
-  public anyfunction(ctx) {
+  public async anyfunction(ctx) {
     const timestamp = this.getTimestamp(ctx);
     const uniqueClientId = this.getUniqueClientId(ctx);
     const params = this.getParams(ctx, { length: 2 });
-
-    const results = this.getAllResultsFromIterator(iterator, false, 5); // in a Write transaction, Fabric does not support Limit Queries. This helper does the job.
+    const exists = await this.exists(ctx, id);
+    const results = await this.getAllResultsFromIterator(iterator, false, 5); // in a Write transaction, Fabric does not support Limit Queries. This helper does the job.
   }
 
   /**
