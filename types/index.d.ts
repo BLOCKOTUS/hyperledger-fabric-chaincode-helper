@@ -22,7 +22,8 @@ declare module 'hyperledger-fabric-chaincode-helper' {
         getTimestamp(ctx: Context): Number;
         getUniqueClientId(ctx: Context): string;
         getParams(ctx: Context, rules?: { length?: number }): Array<string>;
+        setOrganName(name: string): void;
         setDIDControllerOrgan(co: string): void;
-        authDIDRequest(ctx: Context, id: string): Promise<boolean>;
+        authDIDRequest(ctx: Context, origin: string, id: string): Promise<boolean>;
     }
 }
