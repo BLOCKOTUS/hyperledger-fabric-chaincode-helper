@@ -23,6 +23,7 @@ declare module 'hyperledger-fabric-chaincode-helper' {
         getParams(ctx: Context, rules?: { length?: number }): Array<string>;
         getTimestamp(ctx: Context): Number;
         getUniqueClientId(ctx: Context): string;
+        #setDIDControlledOrgans(cos: string[]): void;
         #setDIDControllerOrgan(co: string): void;
         #setGetControllerId(fn: function): void;
         #setName(name: string): void;
