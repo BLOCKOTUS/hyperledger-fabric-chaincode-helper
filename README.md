@@ -91,8 +91,8 @@ class MyContract extends BlockotusContract {
    * Cross-contract invokeChaincode() does not support Parent Contract method as far as I know.
    * This is why we duplicate the method here.
    */
-  public async didAuthDIDRequest(ctx: Context, origin: string, id: string): Promise<boolean> {
-      return this.authDIDRequest(ctx, origin, id);
+  public async authDIDRequest(ctx: Context, origin: string, id: string): Promise<boolean> {
+      return this.didAuthDIDRequest(ctx, origin, id);
   }
 
 }

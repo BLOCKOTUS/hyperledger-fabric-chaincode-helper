@@ -12,6 +12,7 @@ declare module 'hyperledger-fabric-chaincode-helper' {
     };
 
     export class BlockotusContract extends Contract {
+        didAuthDIDRequest(ctx: Context, origin: string, id: string): Promise<boolean>;
         didGet(ctx: Context, id: string): Promise<string>;
         didPost(ctx: Context, data: any): Promise<string>;
         didPut(ctx: Context, id: string, data: any): Promise<string>;
@@ -19,12 +20,11 @@ declare module 'hyperledger-fabric-chaincode-helper' {
         didRequest(ctx: Context, subject: string, method: string, data: string): Promise<string>;
         exists(ctx: Context, id: string): Promise<boolean>;
         getAllResultsFromIterator(iterator: Iterators.StateQueryIterator, isHistory?: boolean, limit?: number): Promise<Array<QueryResult>>;
+        getParams(ctx: Context, rules?: { length?: number }): Array<string>;
         getTimestamp(ctx: Context): Number;
         getUniqueClientId(ctx: Context): string;
-        getParams(ctx: Context, rules?: { length?: number }): Array<string>;
-        #setOrganName(name: string): void;
         #setDIDControllerOrgan(co: string): void;
         #setGetControllerId(fn: function): void;
-        authDIDRequest(ctx: Context, origin: string, id: string): Promise<boolean>;
+        #setName(name: string): void;
     }
 }
